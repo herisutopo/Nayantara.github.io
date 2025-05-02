@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayataran</title>
+  <style>
+    /* Reset dan gaya dasar */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color: #5C3A21; background-color: #FFF7F0; }
+    a { text-decoration: none; color: inherit; }/* Header */
+header { background-color: #FDEEF4; padding: 20px; text-align: center; border-bottom: 2px solid #F8C5D3; }
+header .logo { font-size: 2rem; font-weight: bold; color: #D45D79; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; }
+nav ul li { font-weight: 600; }
+
+/* Hero */
+.hero { padding: 60px 20px; text-align: center; background-image: url('https://via.placeholder.com/1200x400/FFE4E1/000000?text=Hantaran+Pernikahan'); background-size: cover; background-position: center; color: #5C3A21; }
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero p { font-size: 1.2rem; margin-bottom: 30px; }
+.hero .btn { background-color: #D45D79; color: #FFF; padding: 12px 30px; border-radius: 25px; font-size: 1rem; }
+
+/* Section umum */
+section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+section h2 { font-size: 2rem; text-align: center; margin-bottom: 30px; color: #D45D79; }
+
+/* Layanan */
+.services { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.service-card { background-color: #FFFFFF; border: 1px solid #F3D2DF; border-radius: 12px; width: 280px; padding: 20px; text-align: center; }
+.service-card h3 { margin-bottom: 10px; }
+.service-card p { font-size: 0.95rem; margin-bottom: 15px; }
+
+/* Galeri */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.gallery img { width: 100%; border-radius: 8px; }
+
+/* Testimoni */
+.testimonials { display: flex; flex-direction: column; gap: 20px; }
+.testimonial-card { background-color: #FFF1F6; border-left: 4px solid #D45D79; padding: 20px; border-radius: 8px; }
+.testimonial-card p { margin-bottom: 10px; font-style: italic; }
+.testimonial-card span { display: block; text-align: right; font-weight: bold; }
+
+/* Kontak */
+.contact { background-color: #F8EDEB; border-radius: 12px; padding: 40px; }
+.contact form { display: grid; gap: 15px; }
+.contact input, .contact textarea { padding: 12px; border: 1px solid #F3D2DF; border-radius: 6px; width: 100%; font-size: 1rem; }
+.contact button { background-color: #D45D79; color: #FFF; padding: 12px; border: none; border-radius: 25px; font-size: 1rem; width: 150px; justify-self: center; }
+
+/* Footer */
+footer { text-align: center; padding: 20px; font-size: 0.9rem; background-color: #FDEEF4; margin-top: 40px; }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Nayataran</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#testimonials">Testimoni</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="hero" id="home">
+    <h1>Penyewaan Hantaran Berbagai Macam Model Yang Kekinian</h1>
+    <p>Desain personal dan penuh makna untuk momen terindah Anda.</p>
+    <a href="#contact" class="btn">Pesan Sekarang</a>
+  </section>  <section id="services">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Hantaran Custom</h3>
+        <p>Pilih tema, warna, dan isi hantaran sesuai keinginan Anda.</p>
+      </div>
+      <div class="service-card">
+        <h3>Paket Standard</h3>
+        <p>Paket lengkap dengan elemen tradisional dan modern.</p>
+      </div>
+      <div class="service-card">
+        <h3>Paket Premium</h3>
+        <p>Hantaran eksklusif dengan bahan berkualitas tinggi.</p>
+      </div>
+    </div>
+  </section>  <section id="gallery">
+    <h2>Galeri Hasil Kerja</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300" alt="Hantaran 1">
+      <img src="https://via.placeholder.com/400x300" alt="Hantaran 2">
+      <img src="https://via.placeholder.com/400x300" alt="Hantaran 3">
+      <img src="https://via.placeholder.com/400x300" alt="Hantaran 4">
+    </div>
+  </section>  <section id="testimonials">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p>"Hantaran dari Naya sangat elegan dan sesuai harapan kami!"
+        </p><span>— Rina</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Layanan cepat dan hasilnya cantik sekali. Terima kasih Naya Hantaran!"
+        </p><span>— Putri</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Rekomendasi sekali untuk teman-teman yang mau menikah."
+        </p><span>— Dewi</span>
+      </div>
+    </div>
+  </section>  <section id="contact" class="contact">
+    <h2>Kontak Kami</h2>
+    <form action="mailto:Nayantara99@gmail.com method="post" enctype="text/plain">
+      <input type="text" name="Nama" placeholder="Inaya" required>
+      <input type="email" name="Email" placeholder="Nayantara99@gmail.com" required>
+      <textarea name="Pesan" rows="4" placeholder="Pesan atau pertanyaan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>  <footer>
+    &copy; 2025 Nayataran. All Rights Reserved.
+  </footer>
+</body>
+</html>
